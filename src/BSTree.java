@@ -13,23 +13,7 @@ public class BSTree {
     public void delete(String value) {
         root = delete(root, value);
     }
-
-    public void print(){
-        print(root);
-    }
-
-    private void print(BSTreeNode tree){
-        if(tree == null){
-            return;
-        }else{
-            print(tree.left);
-            System.out.println(tree.data);
-            print(tree.right);
-        }
-    }
-
-
-
+    
     public String toStringInOrder() {
 
         return toStringInOrder(root);
@@ -136,7 +120,7 @@ public class BSTree {
         right += toStringPreOrder(node.right).trim();
 
         return (nodeData+ " " +left + " " + right).replaceAll("  ", " ");
-        
+
     }
 
     private class BSTreeNode {

@@ -125,13 +125,10 @@ public class Practice5Test {
 
 	}
 
-	public void printTest() {
-		tree.print();
-	}
+
 	public static void main(String[] args) {
 		Practice5Test test = new Practice5Test();
 		test.runTests();
-		test.printTest();
 	}
 
 }
