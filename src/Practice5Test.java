@@ -103,7 +103,7 @@ public class Practice5Test {
 				throw new Exception("Fails.");
 			}
 		} catch (Exception e) {
-			System.out.println("[   ] = the tree does not appears to store data correct pre-order order.");
+			System.out.println("[   ] = the tree does not appears to store data correct in-order order.");
 		}
 		
 		// Test 4: check that the (pre-ordering) ordering of the tree is correct
@@ -120,12 +120,18 @@ public class Practice5Test {
 		
 		System.out.println("----------------------------------------");
 		System.out.println("Starting point for this assignment: " + grade + "%.");
+
+
+
 	}
 
-
+	public void printTest() {
+		tree.print();
+	}
 	public static void main(String[] args) {
 		Practice5Test test = new Practice5Test();
 		test.runTests();
+		test.printTest();
 	}
 
 }
